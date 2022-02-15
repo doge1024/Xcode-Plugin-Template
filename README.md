@@ -1,3 +1,5 @@
+# Original Repository [Xcode-Plugin-Template](https://github.com/kattrali/Xcode-Plugin-Template.git)
+
 # Xcode Plugin Template
 
 Basic template for creating a plugin for Xcode 13.
