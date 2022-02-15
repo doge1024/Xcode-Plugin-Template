@@ -6,8 +6,10 @@ Basic template for creating a plugin for Xcode 13.
 
 ## Installation
 
-- Install using [Alcatraz](http://alcatraz.io/)
-- Copy Xcode Plugin.xctemplate to ~/Library/Developer/Xcode/Templates/Project\ Templates/Xcode\ Plugin/Xcode\ Plugin.xctemplate
+1. git clone repository
+2. run `cd Xcode-Plugin-Template`
+3. run `mkdir -p ~/Library/Developer/Xcode/Templates/Project\ Templates && cp -R ./Project\ Templates/Application\ Plug-in/Xcode\ Plugin.xctemplate ~/Library/Developer/Xcode/Templates/Project\ Templates/`
+4. restart Xcode
 
 ## Usage
 
