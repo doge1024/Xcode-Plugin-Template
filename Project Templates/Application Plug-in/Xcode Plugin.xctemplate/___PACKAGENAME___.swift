@@ -30,8 +30,6 @@ class ___PACKAGENAME___: NSObject {
         // NSApp may be nil if the plugin is loaded from the xcodebuild command line tool
         if (NSApp != nil && NSApp.mainMenu == nil) {
             center.addObserver(self, selector: #selector(self.applicationDidFinishLaunching), name: NSApplicationDidFinishLaunchingNotification, object: nil)
-        } else {
-            initializeAndLog()
         }
     }
 
@@ -44,7 +42,9 @@ class ___PACKAGENAME___: NSObject {
 
     func applicationDidFinishLaunching() {
         center.removeObserver(self, name: NSApplicationDidFinishLaunchingNotification, object: nil)
-        initializeAndLog()
+        OperationQueue.main.addOperation {
+            initializeAndLog()       
+        }
     }
 
     // MARK: - Implementation

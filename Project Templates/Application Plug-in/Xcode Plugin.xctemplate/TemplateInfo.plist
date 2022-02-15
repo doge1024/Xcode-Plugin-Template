@@ -34,6 +34,8 @@
 				<string>$(HOME)</string>
 				<key>COMBINE_HIDPI_IMAGES</key>
 				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/Info.plist</string>
 			</dict>
 			<key>BuildPhases</key>
 			<array>
@@ -74,9 +76,11 @@
 &lt;false/&gt;
 &lt;key&gt;XC4Compatible&lt;/key&gt;
 &lt;true/&gt;
+&lt;key&gt;XC5Compatible&lt;/key&gt;
+&lt;true/&gt;
 &lt;key&gt;DVTPlugInCompatibilityUUIDs&lt;/key&gt;
 &lt;array&gt;
-&lt;string&gt;C4A681B0-4A26-480E-93EC-1218098B9AA0&lt;/string&gt;
+&lt;string&gt;7A3A18B7-4C08-46F0-A96A-AB686D315DF0&lt;/string&gt;
 &lt;string&gt;F41BD31E-2683-44B8-AE7F-5F09E919790E&lt;/string&gt;
 &lt;string&gt;AD68E85B-441B-4301-B564-A45E4919A6AD&lt;/string&gt;
 &lt;string&gt;A16FF353-8441-459E-A50C-B071F53F51B7&lt;/string&gt;

@@ -38,8 +38,6 @@ static ___PACKAGENAME___ *sharedPlugin;
                                                      selector:@selector(applicationDidFinishLaunching:)
                                                          name:NSApplicationDidFinishLaunchingNotification
                                                        object:nil];
-        } else {
-            [self initializeAndLog];
         }
     }
     return self;
@@ -48,7 +46,9 @@ static ___PACKAGENAME___ *sharedPlugin;
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
-    [self initializeAndLog];
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        [self initializeAndLog];
+    }];
 }
 
 - (void)initializeAndLog
